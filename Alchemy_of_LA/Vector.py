@@ -15,7 +15,9 @@ class Vector:
         return len(self._values)
 
     def __repr__(self):
+        """对系统自己而言"""
         return "Vector({})".format(self._values)
 
     def __str__(self):
+        """对于使用者而言"""
         return "({})".format(", ".join(str(e) for e in self._values))
