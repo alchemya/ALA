@@ -24,3 +24,19 @@ if __name__ == "__main__":
     print(zero2)
     print("{} + {} = {}".format(vec, zero2, vec + zero2))
 
+    print("norm({}) = {}".format(vec, vec.norm()))
+    print("norm({}) = {}".format(vec2, vec2.norm()))
+    print("norm({}) = {}".format(zero2, zero2.norm()))
+
+    print("normalize {} is {}".format(vec, vec.normalize()))
+    print(vec.normalize().norm())
+
+    print("normalize {} is {}".format(vec2, vec2.normalize()))
+    print(vec2.normalize().norm())
+
+    try:
+        zero2.normalize()
+    except ZeroDivisionError:
+        print("Cannot normalize zero vector {}.".format(zero2))
+
+    print(vec.dot(vec2))
