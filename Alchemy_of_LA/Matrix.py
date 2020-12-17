@@ -17,9 +17,9 @@ class Matrix:
         """返回矩阵的第index个列向量"""
         return Vector([row[index] for row in self._values])
 
-    def __getitem__(self, pos):
+    def __getitem__(self, position):
         """返回矩阵pos位置的元素"""
-        r, c = pos
+        r, c = position
         return self._values[r][c]
 
     def size(self):
