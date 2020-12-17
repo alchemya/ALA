@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+from ._global import EPSILON
+import math
+
 class Vector:
 
     def __init__(self, lst):
@@ -9,7 +12,7 @@ class Vector:
     @classmethod
     def zero(cls, dim):
         """返回一个dim维的零向量"""
-        return cls([0] * dim)
+        return cls([0] * dim) 
 
     def __add__(self, another):
         """向量加法，返回结果向量"""
