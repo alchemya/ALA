@@ -50,3 +50,11 @@ if __name__ == "__main__":
 
     # zero3 = np.zeros(3)
     # print(zero3 / np.linalg.norm(zero3))
+
+
+    a = np.array([[1,2],[3,4]])
+    b= np.array([10, 100])
+    print(b)
+    print(a.shape)
+    print(b.shape)
+    print(a.dot(b))
