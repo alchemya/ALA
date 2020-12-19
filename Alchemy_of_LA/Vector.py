@@ -50,6 +50,10 @@ class Vector:
 
         return sum(a * b for a, b in zip(self, another))
 
+    def underlying_list(self):
+        """返回向量的底层列表"""
+        return self._values[:]
+
     def __mul__(self, k):
         """返回数量乘法的结果向量：self * k"""
         return Vector([k * e for e in self])
