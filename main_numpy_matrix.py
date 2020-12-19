@@ -33,3 +33,20 @@ if __name__ == "__main__":
     print(A + 1)
 
     print(A.dot(p))
+
+    # 单位矩阵xc
+    I = np.identity(2)
+    print(I)
+    print(A.dot(I))
+    print(I.dot(A))
+
+    # 逆矩阵
+    invA = np.linalg.inv(A)
+    print(invA)
+    print(invA.dot(A))
+    print(A.dot(invA))
+
+    # C = np.array([[1, 2, 3], [4, 5, 6]])
+    # np.linalg.inv(C)
+    # 非方阵没有逆矩阵
+
