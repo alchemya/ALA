@@ -3,7 +3,7 @@
 
 from Alchemy_of_LA.Matrix import Matrix
 from Alchemy_of_LA.Vector import Vector
-from Alchemy_of_LA.LinearSystem import LinearSystem
+from Alchemy_of_LA.LinearSystem import LinearSystem,inv
 
 
 if __name__ == "__main__":
@@ -75,3 +75,9 @@ if __name__ == "__main__":
         print("No Solution!")
     ls8.fancy_print()
     print()
+
+    A = Matrix([[1, 2], [3, 4]])
+    invA = inv(A)
+    print(invA)
+    print(A.dot(invA))
+    print(invA.dot(A))
